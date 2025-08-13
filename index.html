@@ -1,0 +1,38 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1a2d45">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="manifest" href="manifest.json">
+  <title>Avanti App</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header class="app-header">
+    <img class="logo" src="icons/icon-192.png" alt="Avanti logo">
+    <h1>Avanti App</h1>
+  </header>
+
+  <main>
+    <p>This is an installable PWA. It works offline after first load.</p>
+    <button id="installBtn" hidden>Install App</button>
+
+    <section class="card">
+      <h2>Status</h2>
+      <ul id="statusList"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <small>© <span id="year"></span> Avanti</small>
+  </footer>
+
+  <div id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
